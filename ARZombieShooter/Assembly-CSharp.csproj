@@ -45,6 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Demo\DemoScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\FireLightScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+     <Compile Include="Assets\Assets\Plugins\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Examples\Scenes\2D\Scripts\PlatformerCharacter2D.cs" />
@@ -70,6 +78,11 @@
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Scripts\Controllers\SimpleButton.cs" />
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Scripts\Controllers\SimpleJoystick.cs" />
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Scripts\Controllers\Touchpad.cs" />
+     <Compile Include="Assets\Assets\Scripts\BulletBehavior.cs" />
+     <Compile Include="Assets\Assets\Scripts\FireGun.cs" />
+     <Compile Include="Assets\Assets\Scripts\PlayerInfo.cs" />
+     <Compile Include="Assets\Assets\Scripts\PlayerLife.cs" />
+     <Compile Include="Assets\Assets\Scripts\ZombieBehavior.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
@@ -114,11 +127,13 @@
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\StreamingAssets\QCAR\Accurate-Target.xml" />
      <None Include="Assets\Vuforia\Shaders\RenderVideoBackground.shader" />
+     <None Include="Assets\Assets\Plugins\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
      <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\readme_SDK.txt" />
+     <None Include="Assets\Assets\Plugins\PyroParticles\Readme.txt" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />

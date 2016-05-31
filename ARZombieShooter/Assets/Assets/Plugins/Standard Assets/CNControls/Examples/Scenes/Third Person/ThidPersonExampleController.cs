@@ -37,6 +37,6 @@ public class ThidPersonExampleController : MonoBehaviour
         }
 
         movementVector += Physics.gravity;
-        _characterController.Move(movementVector * Time.deltaTime);
+        _characterController.Move(movementVector * Time.deltaTime * MovementSpeed);
     }
 }
