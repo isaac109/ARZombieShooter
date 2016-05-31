@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{462807FB-0952-1C61-97A9-6843E249740E}") = "ARZombieShooter", "Assembly-CSharp.csproj", "{D36828EB-789F-0975-6E08-528600E1D345}"
+EndProject
+Project("{462807FB-0952-1C61-97A9-6843E249740E}") = "ARZombieShooter", "Assembly-CSharp-Editor.csproj", "{89EEF45E-6741-EBC4-EA6D-2DCD081F972A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D36828EB-789F-0975-6E08-528600E1D345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36828EB-789F-0975-6E08-528600E1D345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36828EB-789F-0975-6E08-528600E1D345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36828EB-789F-0975-6E08-528600E1D345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89EEF45E-6741-EBC4-EA6D-2DCD081F972A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EEF45E-6741-EBC4-EA6D-2DCD081F972A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EEF45E-6741-EBC4-EA6D-2DCD081F972A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EEF45E-6741-EBC4-EA6D-2DCD081F972A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
