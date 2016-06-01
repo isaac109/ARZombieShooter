@@ -10,10 +10,18 @@ public class PlayerInfo : MonoBehaviour {
     public float lvl = 0;
     public float score = 0;
 
+    public bool start = false;
+
     public GameObject zombie;
     public int numZombies = 0;
 
 
+    public Text killsTxt;
+    public Text shotsTxt;
+    public Text lvlTxt;
+    public Text scoreTxt;
+    public GameObject gameOverImg;
+    public GameObject hud;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +30,7 @@ public class PlayerInfo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (numZombies == 0)
+        if (numZombies == 0 && start)
         {
             incramentLvl();
         }
@@ -52,5 +60,16 @@ public class PlayerInfo : MonoBehaviour {
     public void gameOver()
     {
         this.gameObject.SetActive(false);
+        killsTxt.text = ((int)kills).ToString() + " Kills";
+        shotsTxt.text = ((int)shotsFired).ToString() + " Shots fired";
+        lvlTxt.text = ((int)lvl).ToString() + " Waves";
+        if (shotsFired != 0)
+        {
+            score = kills / shotsFired;
+        }
+        score *= lvl * 10;
+        scoreTxt.text = ((int)score).ToString() + " Points";
+        gameOverImg.SetActive(true);
+        hud.SetActive(false);
     }
 }

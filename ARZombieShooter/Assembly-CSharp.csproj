@@ -80,6 +80,7 @@
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Scripts\Controllers\Touchpad.cs" />
      <Compile Include="Assets\Assets\Scripts\BulletBehavior.cs" />
      <Compile Include="Assets\Assets\Scripts\FireGun.cs" />
+     <Compile Include="Assets\Assets\Scripts\MenuHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Assets\Scripts\PlayerLife.cs" />
      <Compile Include="Assets\Assets\Scripts\ZombieBehavior.cs" />
