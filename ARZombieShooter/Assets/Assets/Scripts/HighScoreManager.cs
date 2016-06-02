@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Data;
 using Mono.Data.Sqlite;
@@ -12,6 +13,7 @@ public class HighScoreManager : MonoBehaviour {
     private IDbConnection dbcon;
     private IDbCommand dbcmd;
     private IDataReader reader;
+    public Text test;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +37,8 @@ public class HighScoreManager : MonoBehaviour {
 
     public void CloseDB()
     {
-        reader.Close();
+        if (reader != null)
+            reader.Close();
         reader = null;
         dbcmd.Dispose();
         dbcmd = null;
@@ -76,21 +79,28 @@ public class HighScoreManager : MonoBehaviour {
     public List<ScoreCard> GetScores()
     {
         List<ScoreCard> scores = new List<ScoreCard>();
-        OpenDB();
-        using (dbcmd = dbcon.CreateCommand())
+        try
         {
-            string sqlQuery = "SELECT * FROM HighScores ORDER BY Score DESC LIMIT 9";
-            dbcmd.CommandText = sqlQuery;
-
-            using (reader = dbcmd.ExecuteReader())
+            OpenDB();
+            using (dbcmd = dbcon.CreateCommand())
             {
-                while (reader.Read())
+                string sqlQuery = "SELECT * FROM HighScores ORDER BY Score DESC LIMIT 9";
+                dbcmd.CommandText = sqlQuery;
+
+                using (reader = dbcmd.ExecuteReader())
                 {
-                    ScoreCard temp = new ScoreCard(reader.GetString(1), reader.GetInt32(6));
-                    scores.Add(temp);
+                    while (reader.Read())
+                    {
+                        ScoreCard temp = new ScoreCard(reader.GetString(1), reader.GetInt32(6));
+                        scores.Add(temp);
+                    }
+                    CloseDB();
                 }
-                CloseDB();
             }
+        }
+        catch (Exception e)
+        {
+            test.text = e.StackTrace;
         }
         return scores;
     }

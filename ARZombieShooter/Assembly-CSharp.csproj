@@ -85,6 +85,7 @@
      <Compile Include="Assets\Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Assets\Scripts\PlayerLife.cs" />
      <Compile Include="Assets\Assets\Scripts\ZombieBehavior.cs" />
+     <Compile Include="Assets\Assets\Scripts\test.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
@@ -149,14 +150,14 @@
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
- <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
- </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Assets/Plugins/System.Data.dll</HintPath>
+ <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="System.Configuration">
- <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Assets/Plugins/System.Configuration.dll</HintPath>
+ <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Plugins/System.Configuration.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
