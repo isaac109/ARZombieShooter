@@ -80,6 +80,7 @@
      <Compile Include="Assets\Assets\Plugins\Standard Assets\CNControls\Scripts\Controllers\Touchpad.cs" />
      <Compile Include="Assets\Assets\Scripts\BulletBehavior.cs" />
      <Compile Include="Assets\Assets\Scripts\FireGun.cs" />
+     <Compile Include="Assets\Assets\Scripts\HighScoreManager.cs" />
      <Compile Include="Assets\Assets\Scripts\MenuHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\PlayerInfo.cs" />
      <Compile Include="Assets\Assets\Scripts\PlayerLife.cs" />
@@ -147,6 +148,15 @@
  </Reference>
  <Reference Include="Vuforia.UnityExtensions">
  <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Assets/Plugins/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Configuration">
+ <HintPath>C:/Users/TheHollowManV/Documents/GitHub/ARZombieShooter/ARZombieShooter/Assets/Assets/Plugins/System.Configuration.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
